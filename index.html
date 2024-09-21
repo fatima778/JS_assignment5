@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 5</title>
+</head>
+
+<body>
+
+    <!-- Chapter 38-42 -->
+    <h1>Chapter 38-42</h1>
+    <script src="chap38-42.js"></script>
+    <hr>
+
+    <!-- Chapter 43-58 -->
+    <h1>Chapter 43-48</h1>
+    <a href="#" onClick="alert('Hi');">Click</a>
+    <!-- ------------------------------------------- -->
+    <img src="ASSESTS/mobile pic.jpg
+    " alt="mobile" onclick="alert('Thanks for purchasing a phone')" width="100px" height="200px">
+    <br>
+    <!-- ------------------------------------------- -->
+    <table border="1">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+        <tr class="row1">
+            <td>01</td>
+            <td>John</td>
+            <td>10</td>
+            <td><button onclick="hideRow('row1')">Delete</button></td>
+        </tr>
+        <tr class="row2">
+            <td>02</td>
+            <td>Jane</td>
+            <td>9</td>
+            <td><button onclick="hideRow('row2')">Delete</button></td>
+        </tr>
+        <tr class="row3">
+            <td>03</td>
+            <td>Adam</td>
+            <td>8</td>
+            <td><button onclick="hideRow('row3')">Delete</button></td>
+        </tr>
+        <tr class="row4">
+            <td>04</td>
+            <td>Eva</td>
+            <td>10</td>
+            <td><button onclick="hideRow('row4')">Delete</button></td>
+        </tr>
+    </table>
+    
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <!-- ---------------------------------------------------------------- -->
+    <img src="assests/images.jpg" alt="" width="500px" height="500px" onmouseover="swapImage(event,'over')"
+        onmouseout="swapImage(event,'out')">
+    <!-- ------------------------------------------------------------ -->
+    <h2 id="counter">0</h2>
+    <button onclick="changeCounter(1)">Increase</button>
+    <button onclick="changeCounter(-1)">Decrease</button>
+    <script src="chap43-48.js"></script>
+    <hr>
+
+    <!-- Chapter 49-52 -->
+    <h1>Chapter 49-52</h1>
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <button type="submit" onclick="displayData(event)">Submit</button>
+    </form>
+
+    <h3>Submitted Data:</h3>
+    <p id="result"></p>
+    <!-- ------------------------------------------------------------ -->
+    <h2>TDF Ghar</h2>
+    <h3>TDF Ghar is a ‘living museum’ of the past and an informal learning space.</h3>
+    <p id="para">The House was originally constructed in the 1930s under an almond tree with hand-crafted tiles.[2] It
+        belonged to a Hindu woman, Haribai Motiram, who later sold it to the Dawood family’s ancestors.[3][4]
+        <br>
+        The house is situated in the East-Karachi neighborhood Jamshed Quarters and is accessible through Muhammad Ali
+        Jinnah Road. Jamshed Quarters was envisioned by then-Mayor and philanthropist Jamshed Nusserwanjee Mehta as a
+        home for the growing middle class of Karachi. It was home to multiple ethnicities and people of different faith,
+        like Muslims, Hindus, Christians, Parsis, and Jews.[5]
+        <a href="Javascript:void(0)" onclick="expand()">Read more</a>
+    </p>
+    <!-- ------------------------------------------------------------ -->
+    
+<h2>Add Student</h2>
+
+<!-- Form to add a new student -->
+<form id="studentForm" class="hidden">
+    Name: <input type="text" id="name" required><br><br>
+    Class: <input type="text" id="class" required><br><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<!-- Table to display student details -->
+<table border="1" id="studentTable">
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Action</th>
+    </tr>
+</table>
+
+<!-- Button to show the form -->
+<button onclick="showForm()">Add Student</button>
+</style>    
+    <script src="chap49-52.js"></script>
+    <hr>
+
+    <!-- Chapter 58-67 -->
+    <h1>Chapter 58-67</h1>
+    <h2> DOM </h2>
+    <div>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>        
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+    <script src="chap58-67.js"></script>
+</body>
+
+</html>
