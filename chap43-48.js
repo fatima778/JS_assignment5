@@ -7,7 +7,7 @@ function hideRow(rowClass) {
 
 function swapImage(events, type) {
     if (type === 'over') {
-        events.target.src = "assests/door_open_800_wht.jpg";
+        events.target.src = "ASSESTS/door_open_800_wht.jpg";
     }
     else {
         events.target.src = "assests/images.jpg";
